@@ -23,9 +23,9 @@ const CharacterCard = props => {
           <Card.Content>
             <Card.Header>Name: {props.name}</Card.Header>
             <Card.Meta>Birth Year: {props.birthYear}</Card.Meta>
-            <Card.Description>Gender: {props.gender}</Card.Description>
-            <Card.Description>Height: {props.height}</Card.Description>
-            <Card.Description>Hair Color: {props.hairColor}</Card.Description>
+            <Card.Description><b>Gender: </b>{props.gender}</Card.Description>
+            <Card.Description><b>Height: </b>{props.height}</Card.Description>
+            <Card.Description><b>Hair Color: </b>{props.hairColor}</Card.Description>
           </Card.Content>
         </Card>
         </CardDiv>
