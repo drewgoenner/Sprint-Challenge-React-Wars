@@ -9,6 +9,9 @@ const CardDiv = styled.div`
     border: 1px solid black;
     justify-content: center;
     background-color: gray;
+    .hidden {
+      display: none;
+    }
     &:hover {
       background-color: white;
     };
@@ -23,7 +26,7 @@ const CardDiv = styled.div`
 const CharacterCard = props => {
   
   return (    
-    <Grid.Column key={props.id}>
+    <Grid.Column padded="horizontally" key={props.id}>
       <CardDiv>
         <Card>
           <Card.Content>
@@ -36,8 +39,6 @@ const CharacterCard = props => {
               <Card.Description><b>Height: </b>{props.height}</Card.Description>
               <Card.Description><b>Mass: </b>{props.mass}</Card.Description>
               <Card.Description><b>Skin Color: </b>{props.skinColor}</Card.Description>
-              
-
             </div>
           </Card.Content>
         </Card>

@@ -9,6 +9,7 @@ export default function CharacterList(props) {
       <Grid relaxed columns={3} divided ="vertically">
         <Grid.Row padded="vertically" columns ={3}>
           {props.data.map(props => {
+
             return (
               <CharacterCard
                 key={props.url}

@@ -13,6 +13,7 @@ const App = () => {
   // sync up with, if any.
 
   const [chars, setChars] = useState([]);
+
   
   useEffect(() => {
     axios
