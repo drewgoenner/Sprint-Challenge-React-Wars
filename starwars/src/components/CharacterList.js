@@ -18,6 +18,9 @@ export default function CharacterList(props) {
                 gender={props.gender}
                 height={props.height}
                 hairColor={props.hair_color}
+                mass={props.mass}
+                skinColor={props.skin_color}
+                eyeColor={props.eye_color}
               />
             );          
           })}
