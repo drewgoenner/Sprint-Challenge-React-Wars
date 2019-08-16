@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Grid } from "semantic-ui-react";
 import styled from "styled-components";
 
 const CardDiv = styled.div`
@@ -7,9 +7,7 @@ const CardDiv = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     border: 1px solid black;
-    margin: 10px;
     justify-content: center;
-    width: 20%;
     background-color: gray;
     &:hover {
       background-color: white;
@@ -17,7 +15,9 @@ const CardDiv = styled.div`
     `;
 
 const CharacterCard = props => {
-  return (       
+  
+  return (    
+    <Grid.Column padded key={props.id}>
       <CardDiv>
         <Card>
           <Card.Content>
@@ -28,7 +28,8 @@ const CharacterCard = props => {
             <Card.Description>Hair Color: {props.hairColor}</Card.Description>
           </Card.Content>
         </Card>
-      </CardDiv>     
+        </CardDiv>
+    </Grid.Column>     
   );
 };
 

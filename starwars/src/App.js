@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from "react";
 import CharacterList from "./components/CharacterList";
 import axios from "axios";
-import './App.scss';
+import "./index.css";
+import "./App.scss";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -13,9 +14,6 @@ const App = () => {
 
   const [chars, setChars] = useState([]);
   
-
-  
-
   useEffect(() => {
     axios
       .get(`https://swapi.co/api/people/`, {
@@ -27,8 +25,6 @@ const App = () => {
         setChars(char)                
       })
   },[]);
-
-  
 
   return (
     <div className = "App">

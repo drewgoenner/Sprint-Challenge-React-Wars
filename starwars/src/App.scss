@@ -6,6 +6,7 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  text-align: center;
 }
 /* write your parent styles in here for your App.js */
 
@@ -16,6 +17,7 @@
    background:linear-gradient(to bottom, rgba(0,0,0,0.09),rgba(0,0,0,0.01));
    border-bottom: 2px solid#3467b4;
    padding-bottom: 5px;
+   text-align: center;
   }
  
  }
