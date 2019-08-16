@@ -17,7 +17,7 @@ const CardDiv = styled.div`
 const CharacterCard = props => {
   
   return (    
-    <Grid.Column padded key={props.id}>
+    <Grid.Column padded="horizontally" key={props.id}>
       <CardDiv>
         <Card>
           <Card.Content>
